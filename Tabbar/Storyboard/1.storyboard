@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c3c-8P-N8F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8in-dl-kdX">
+            <objects>
+                <viewController id="eKd-Df-ItJ" customClass="ViewController" customModule="Tabbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fo3-VU-bX1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TabBar-1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrf-xW-bxx">
+                                <rect key="frame" x="121.5" y="421" width="171.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUW-pF-XR6">
+                                <rect key="frame" x="184" y="331" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapAction" destination="eKd-Df-ItJ" eventType="touchUpInside" id="l8R-HM-FHH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wII-1a-JUn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nrf-xW-bxx" firstAttribute="centerX" secondItem="Fo3-VU-bX1" secondAttribute="centerX" id="Gh4-Hx-aih"/>
+                            <constraint firstItem="nrf-xW-bxx" firstAttribute="top" secondItem="PUW-pF-XR6" secondAttribute="bottom" constant="60" id="Iix-oq-UC2"/>
+                            <constraint firstItem="nrf-xW-bxx" firstAttribute="centerY" secondItem="Fo3-VU-bX1" secondAttribute="centerY" id="JdN-p0-gwS"/>
+                            <constraint firstItem="PUW-pF-XR6" firstAttribute="leading" secondItem="wII-1a-JUn" secondAttribute="leading" constant="184" id="MTh-Pg-0Lq"/>
+                            <constraint firstItem="wII-1a-JUn" firstAttribute="trailing" secondItem="PUW-pF-XR6" secondAttribute="trailing" constant="184" id="Mnm-g8-CoI"/>
+                            <constraint firstItem="PUW-pF-XR6" firstAttribute="top" secondItem="wII-1a-JUn" secondAttribute="top" constant="243" id="dbE-wX-4yU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Kw-Wq-Irh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXX-5T-zX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092.753623188406" y="53.571428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ilg-BR-3Jg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c3c-8P-N8F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FOx-s0-lgE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eKd-Df-ItJ" kind="relationship" relationship="rootViewController" id="f0u-BM-A76"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mc-h2-54H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.60869565217394" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
